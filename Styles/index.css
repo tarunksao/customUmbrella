@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #E6F6FC;
+}
+
+#container{
+    border: 1px solid;
+    width: 90%;
+    margin: 150px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    display: none;
+}
+
+#color-selector{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+#blue{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: blue;
+}
+
+#pink{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: pink;
+}
+
+#yellow{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: yellow;
+}
+
+#upload-btn{
+    background-color: cyan;
+}

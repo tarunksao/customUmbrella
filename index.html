@@ -9,22 +9,20 @@
 </head>
 <body>
     <div id="container">
-        <div>
-            <img src="" alt="" />
-        </div>
+        <div id="umbrella"></div>
         <div>
             <h1>Custom Umbrella</h1>
             <div id="color-selector">
                 <label for="pink">
-                    <input type="radio" name="color" id="radio1" value="pink" />
+                    <input type="radio" name="color" id="radio1" value="Pink" />
                     <span id="pink"></span>
                 </label>
                 <label for="blue">
-                    <input type="radio" name="color" id="radio1" value="blue" />
+                    <input type="radio" name="color" id="radio2" value="Blue" />
                     <span id="blue"></span>
                 </label>
                 <label for="yellow">
-                    <input type="radio" name="color" id="radio1" value="yellow" />
+                    <input type="radio" name="color" id="radio3" value="Yellow" />
                     <span id="yellow"></span>
                 </label>
             </div>
@@ -32,10 +30,13 @@
             <p>Uplaod a logo for an instant preview.</p>
             <p>.png and .jpg files only. Max file size is 5MB.</p>
             <button id="upload-btn">
-                <img src="./Images/upload_icon.svg" alt="upload-icon">
-                <span>UPLOAD LOGO</span>
+                <div>
+                    <img src="./Images/upload_icon.svg" alt="upload-icon">
+                </div>
+                <div>UPLOAD LOGO</div>
             </button>
         </div>
     </div>
 </body>
+<script src="./Scripts/index.js"></script>
 </html>

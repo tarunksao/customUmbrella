@@ -8,20 +8,44 @@
     border: 1px solid;
     width: 90%;
     margin: 150px auto;
+    padding: 0px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 input{
     display: none;
 }
 
-#color-selector{
-    margin: 20px 0px;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
+
+#container>div{
+    width: 50%;
+    margin: auto;
+    padding: auto;
+}
+
+#umbrella{
+    text-align: center;
+}
+
+#umbrealla>img{
+    width: 90%;
+}
+
+.loading {
+    margin: auto;
+    animation: rotation 2s linear infinite ;
+}
+
+@keyframes rotation {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 #blue{
@@ -37,7 +61,7 @@ input{
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    background-color: pink;
+    background-color: rgb(216, 44, 135);
 }
 
 #yellow{
@@ -49,5 +73,21 @@ input{
 }
 
 #upload-btn{
+    width: 200px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: cyan;
+}
+
+#upload-btn>div, #upload-btn img{
+    background: transparent;
+}
+
+#color-selector{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
 }

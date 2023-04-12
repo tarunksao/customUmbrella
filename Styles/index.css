@@ -5,7 +5,6 @@
 }
 
 #container{
-    border: 1px solid;
     width: 90%;
     margin: 150px auto;
     padding: 0px 20px;
@@ -34,7 +33,7 @@ input{
     width: 90%;
 }
 
-.loadImg {
+#umbrella>svg {
     margin: auto;
     animation: rotation 2s linear infinite ;
 }
@@ -63,7 +62,7 @@ input{
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    background-color: blue;
+    background-color: #2EB3E5;
 }
 
 #pink{
@@ -79,20 +78,23 @@ input{
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    background-color: yellow;
+    background-color: #FED141;
 }
 
 #upload-btn{
+    margin-top: 20px;
     width: 200px;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: cyan;
+    background-color: #00A3E0;
+    color: white;
 }
 
-#upload-btn>div, #upload-btn img{
+#upload-btn>div, #upload-btn svg{
     background: transparent;
+    fill: white;
 }
 
 #color-selector{

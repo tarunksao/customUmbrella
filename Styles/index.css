@@ -30,11 +30,11 @@ input{
     text-align: center;
 }
 
-#umbrealla>img{
+.image{
     width: 90%;
 }
 
-.loading {
+.loadImg {
     margin: auto;
     animation: rotation 2s linear infinite ;
 }
@@ -46,6 +46,16 @@ input{
     100%{
         transform: rotate(360deg);
     }
+}
+
+.heading{
+    font-size: 40px;
+    margin: 20px auto;
+}
+
+#color-selector{
+    display: flex;
+    justify-content: start;
 }
 
 #blue{

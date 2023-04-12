@@ -5,13 +5,14 @@
 }
 
 #container{
+    /* border: 1px solid; */
     width: 90%;
-    margin: 150px auto;
-    padding: 0px 20px;
+    height: 500px;
+    margin: 100px auto;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 input{
@@ -20,9 +21,17 @@ input{
 
 
 #container>div{
+    /* border: 1px solid red; */
     width: 50%;
-    margin: auto;
-    padding: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container>div:last-child{
+    align-items: flex-start;
 }
 
 #umbrella{
@@ -30,7 +39,7 @@ input{
 }
 
 .image{
-    width: 90%;
+    width: 80%;
 }
 
 #umbrella>svg {
@@ -48,17 +57,25 @@ input{
 }
 
 .heading{
-    font-size: 40px;
-    margin: 20px auto;
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin: 20px 0;
 }
 
-#color-selector{
-    display: flex;
-    justify-content: start;
+.sub-heading{
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin: 20px 0px 0px;
+}
+
+.text-1{
+    font-size: 18px;
+    letter-spacing: 1.1px;
+    font-weight: 500;
+    margin: 1px 0px 10px;
 }
 
 #blue{
-    display: inline-block;
     width: 20px;
     height: 20px;
     border-radius: 10px;
@@ -66,7 +83,6 @@ input{
 }
 
 #pink{
-    display: inline-block;
     width: 20px;
     height: 20px;
     border-radius: 10px;
@@ -74,7 +90,6 @@ input{
 }
 
 #yellow{
-    display: inline-block;
     width: 20px;
     height: 20px;
     border-radius: 10px;
@@ -83,23 +98,31 @@ input{
 
 #upload-btn{
     margin-top: 20px;
-    width: 200px;
-    padding: 10px 20px;
+    width: 410px;
+    padding: 15px 20px;
+    border: 1px solid #00A3E0;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     background-color: #00A3E0;
     color: white;
+    font-weight: 600;
+    font-size: 20px;
 }
 
-#upload-btn>div, #upload-btn svg{
+#upload-btn svg{
     background: transparent;
     fill: white;
+    margin-right: 90px;
 }
 
 #color-selector{
     margin: 20px 0px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     gap: 25px;
+}
+
+#color-selector button{
+    border: 1px solid white;
 }

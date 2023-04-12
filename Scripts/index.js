@@ -1,27 +1,28 @@
-const umbrella = document.getElementById('umbrella');
-const color = 'pink';
-const radio1 = document.getElementById('radio1');
-const radio2 = document.getElementById('radio2');
-const radio3 = document.getElementById('radio3');
+let umbrella = document.getElementById('umbrella');
+let color = 'pink';
+let radio1 = document.getElementById('pink');
+let radio2 = document.getElementById('blue');
+let radio3 = document.getElementById('yellow');
 
-radio1.addEventListener('select', function () {
-    color = 'pink';
-    console.log(color);
-    customize(color);
+radio1.addEventListener('click', function () {
+    if (color!=='pink') {
+        color = 'pink';
+        customize(color);
+    }
 });
 
-radio2.addEventListener('select', function () {
-    color = 'blue';
-    console.log(color);
-
-    customize(color);
+radio2.addEventListener('click', function () {
+    if (color!=='blue') {
+        color = 'blue';
+        customize(color);
+    }
 });
 
-radio3.addEventListener('select', function () {
-    color = 'yellow';
-    console.log(color);
-
-    customize(color);
+radio3.addEventListener('click', function () {
+    if (color!==yellow) {
+        color = 'yellow';
+        customize(color);
+    }
 });
 
 customize(color);

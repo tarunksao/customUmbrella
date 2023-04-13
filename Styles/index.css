@@ -1,17 +1,18 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #E6F6FC;
+    /* background-color: #E6F6FC; */
     font-family: 'Poppins', sans-serif;
 }
 
 #container{
-    width: 90%;
+    width: 100%;
     height: 500px;
     margin: 100px auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    background: transparent;
 }
 
 input{
@@ -26,11 +27,12 @@ input{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: transparent;
 }
 
 #container>div:last-child{
     align-items: flex-start;
-    width: 40%;
+    width: 35%;
 }
 
 #umbrella{
@@ -59,6 +61,8 @@ input{
 }
 
 #umbrella>svg {
+    width: 60px;
+    height: 60px;
     margin: auto;
     animation: rotation 2s linear infinite ;
 }
@@ -81,7 +85,7 @@ input{
 .sub-heading{
     font-size: 22px;
     letter-spacing: 1px;
-    margin: 20px 0px 0px;
+    margin: 20px 0px -3px;
 }
 
 .text-1{
@@ -96,6 +100,7 @@ input{
     height: 25px;
     border-radius: 100%;
     background-color: #2EB3E5;
+    border: 0px solid;
 }
 
 #pink{
@@ -103,6 +108,7 @@ input{
     height: 25px;
     border-radius: 100%;
     background-color: rgb(216, 44, 135);
+    border: 0px solid;
 }
 
 #yellow{
@@ -110,6 +116,7 @@ input{
     height: 25px;
     border-radius: 100%;
     background-color: #FED141;
+    border: 0px solid;
 }
 
 #upload-btn{
@@ -120,7 +127,7 @@ input{
     margin-top: 20px;
     width: 350px;
     padding: 15px 30px;
-    border: 1px solid #00A3E0;
+    border: 0px solid #00A3E0;
     display: flex;
     justify-content: start;
     align-items: center;

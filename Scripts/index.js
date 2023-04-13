@@ -51,7 +51,7 @@ radio2.addEventListener('click', function () {
 });
 
 radio3.addEventListener('click', function () {
-    if (color!==yellow) {
+    if (color!=='yellow') {
         color = 'yellow';
         customize(color);
     }
@@ -72,7 +72,7 @@ function customize(color) {
     gotLogo=false;
     setTimeout(() => {
         const img = document.createElement('img');
-        img.src = `./Images/${color}_umbrella.png`;
+        img.src = `../Images/${color}_umbrella.png`;
         img.setAttribute('class', 'image');
         umbrella.innerHTML = '';
         umbrella.append(img, logoBox);

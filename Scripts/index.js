@@ -3,6 +3,33 @@ let color = 'pink';
 let radio1 = document.getElementById('pink');
 let radio2 = document.getElementById('blue');
 let radio3 = document.getElementById('yellow');
+let logoFile = document.getElementById('upload-btn');
+
+let gotLogo = false;
+
+logoFile.addEventListener('change', function (e) {
+    
+    let file = e.target.files
+
+    console.log(file);
+
+    if (!gotLogo && file.length>0) {
+        gotLogo=true;
+    
+        let logoBox = document.createElement('div');
+        logoBox.setAttribute('id', 'logo-box');
+
+        logoURL = URL.createObjectURL(file[0]);
+
+        let logo = document.createElement('img');
+        logo.src = logoURL;
+        console.log(logoURL);
+        
+        logoBox.append(logo);
+        umbrella.append(logoBox);
+    }
+
+})
 
 radio1.addEventListener('click', function () {
     if (color!=='pink') {

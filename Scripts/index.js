@@ -72,7 +72,7 @@ function customize(color) {
     gotLogo=false;
     setTimeout(() => {
         const img = document.createElement('img');
-        img.src = `../Images/${color}_umbrella.png`;
+        img.src = `./Images/${color}_umbrella.png`;
         img.setAttribute('class', 'image');
         umbrella.innerHTML = '';
         umbrella.append(img, logoBox);
